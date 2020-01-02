@@ -19,7 +19,7 @@ setuptools.setup(
     author='M Santhosh Kumar',
     author_email='santhoshse7en@gmail.com',
     description='A package for google ML_APIs.',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding="utf8").read(),
     long_description_content_type="text/markdown",
     url='https://santhoshse7en.github.io/ML_APIs',
     package_dir={'ML_APIs': 'ML_APIs'},
