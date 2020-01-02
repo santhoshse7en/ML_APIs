@@ -1,7 +1,7 @@
-# ML_APIs
+### ML_APIs
 A simple python package to get ease use of Google ML APIs
 
-## Quick Start
+### Quick Start
 **In order to use this library, you first need to go through the following steps:**
 
 1. [Select or create a Cloud Platform project.](https://console.cloud.google.com/project)
@@ -14,18 +14,23 @@ Install this library in a [virtualenv](https://virtualenv.pypa.io/en/latest/) us
 
 With [virtualenv](https://virtualenv.pypa.io/en/latest/), it’s possible to install this library without needing system install permissions, and without clashing with the installed system dependencies.
 
-## Supported Python Versions
+### Supported Python Versions
 Python >= 3.5
 
-## Deprecated Python Versions
+### Deprecated Python Versions
 Python == 2.7. Python 2.7 support will be removed on January 1, 2020.
 
-## Windows
+#### Windows 
 ```console
-se7en@bar:~$ pip install virtualenv
-se7en@bar:~$ virtualenv <your-env>
-se7en@bar:~$ <your-env>\Scripts\activate
-se7en@bar:~$ <your-env>\Scripts\pip.exe install google-cloud-vision
+  se7en@bar:~$ pip install virtualenv
+  se7en@bar:~$ virtualenv <your-env>
+  se7en@bar:~$ <your-env>\Scripts\activate
+  (<your-env>)se7en@bar:~$ 
+```
+
+The easiest way to install the latest stable version of Airflow is with pip:
+```console
+  (<your-env>)se7en@bar:~$ pip install ML_APIs
 ```
 ## Example Usage Google Vision A.I. on local media file
 ```python3
@@ -38,5 +43,5 @@ se7en@bar:~$ <your-env>\Scripts\pip.exe install google-cloud-vision
   image_classification = vision_ai_local(path, model, credentials)
   image_classification.logos
 ```
-## Next Steps
+### Next Steps
 Read the Product documentation to learn more about the product and see How-to Guides.
