@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="M Santhosh Kumar">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>How-to Guides - ML_APIs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "How-to Guides";
+    var mkdocs_page_input_path = "howtoguide.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ML_APIs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../start/">Quick Start</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../installation/">Installation</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">How-to Guides</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#google-vision-ai">Google Vision AI</a></li>
+    
+
+    <li class="toctree-l2"><a href="#google-video-ai">Google Video AI</a></li>
+    
+
+    <li class="toctree-l2"><a href="#google-natural-language">Google Natural Language</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../about/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ML_APIs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>How-to Guides</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="google-vision-ai">Google Vision AI</h3>
+<p>Derive insights from your images in the cloud or at the edge with AutoML Vision or use pre-trained Vision API models to detect emotion, understand text, and more.</p>
+<p><strong>Industry-leading accuracy for image understanding</strong></p>
+<p>Google Cloud offers two computer vision products that use machine learning to help you understand your images with industry-leading prediction accuracy.</p>
+<p><a href="https://cloud.google.com/vision/overview/docs/get-started">Google Cloud’s Vision API</a> offers powerful pre-trained machine learning models through REST and RPC APIs. Assign labels to images and quickly classify them into millions of predefined categories. Detect objects and faces, read printed and handwritten text, and build valuable metadata into your image catalog.</p>
+<p><strong>Google Vision A.I. on local media file</strong></p>
+<pre><code class="python3">  from ML_APIs.google import vision_ai_local
+
+  path = &lt;your-image-path&gt;
+  model = 'logos'
+  credentials = &lt;your-credentials.json&gt;
+
+  image_classification = vision_ai_local(path, model, credentials)
+
+  print('Labels:')
+  image_classification.logos
+</code></pre>
+
+<p><strong>Google Vision A.I. on uri media file</strong></p>
+<pre><code class="python3">  from ML_APIs.google import vision_ai_cloud
+
+  uri = &lt;your-image-uri&gt;
+  model = 'logos'
+  credentials = &lt;your-credentials.json&gt;
+
+  image_classification = vision_ai_cloud(path, model, credentials)
+
+  print('Labels:')
+  image_classification.logos
+</code></pre>
+
+<p><strong>Sample Image</strong></p>
+<p><img alt="virat" src="https://user-images.githubusercontent.com/47944792/71662618-21865a80-2d78-11ea-9d4c-634ea63a87e5.jpg" /></p>
+<p><strong>Sample Output</strong></p>
+<p><img alt="df" src="https://user-images.githubusercontent.com/47944792/71662590-0ae00380-2d78-11ea-91d8-8f0cb05fd5c5.PNG" /></p>
+<h3 id="google-video-ai">Google Video AI</h3>
+<p>Enable powerful content discovery and engaging video experiences.</p>
+<p><strong>Two ways to make your media more discoverable</strong></p>
+<p>Google offers two fully-featured video AI products to make your video library more searchable and valuable.</p>
+<p><a href="https://cloud.google.com/video-intelligence/docs/quickstart">Video Intelligence API</a> has pre-trained machine learning models that automatically recognize a vast number of objects, places, and actions in stored and streaming video. It’s highly efficient for common use cases and improves over time as new concepts are introduced.</p>
+<p><strong>Google Vision A.I. on local path file</strong></p>
+<pre><code class="python3">  from ML_APIs.google import video_ai_local
+
+  path = &lt;your-path&gt;
+  model = 'labels'
+  credentials = &lt;your-credentials.json&gt;
+
+  video_classification = video_ai_local(path, model, credentials)
+
+  print(&quot;Process video/segment level label annotations&quot;)
+  video_classification.analyze_segment_labels
+
+  print(&quot;Process shot level label annotations&quot;)
+  video_classification.analyze_shot_labels
+</code></pre>
+
+<p><strong>Google Vision A.I. on uri media</strong></p>
+<pre><code class="python3">  from ML_APIs.google import video_ai_cloud
+
+  uri = &lt;your-uri&gt;
+  model = 'entity'
+  credentials = &lt;your-credentials.json&gt;
+
+  video_classification = video_ai_cloud(uri, model, credentials)
+
+  print(&quot;Process video/segment level label annotations&quot;)
+  video_classification.analyze_segment_labels
+
+  print(&quot;Process shot level label annotations&quot;)
+  video_classification.analyze_shot_labels
+</code></pre>
+
+<h3 id="google-natural-language">Google Natural Language</h3>
+<p>Derive insights from unstructured text using Google machine learning.</p>
+<p><strong>Insightful text analysis</strong></p>
+<p>Natural Language uses machine learning to reveal the structure and meaning of text. You can extract information about people, places, and events, and better understand social media sentiment and customer conversations. Natural Language enables you to analyze text and also integrate it with your document storage on Cloud Storage.</p>
+<p>The powerful pre-trained models of the <a href="https://cloud.google.com/natural-language/docs/quickstarts">Natural Language API</a> let developers work with natural language understanding features including sentiment analysis, entity analysis, entity sentiment analysis, content classification, and syntax analysis.</p>
+<p><strong>Google Vision A.I. on local text_content file</strong></p>
+<pre><code class="python3">  from ML_APIs.google import nlp_ai_local
+
+  text_content = &lt;your-text_content&gt;
+  model = 'entity'
+  credentials = &lt;your-credentials.json&gt;
+
+  text_classification = nlp_ai_local(text_content, model, credentials)
+  print(&quot;Analyzing Entities in a String&quot;)
+  text_classification.analyze_entities
+</code></pre>
+
+<p><strong>Google Vision A.I. on uri text_content file</strong></p>
+<pre><code class="python3">  from ML_APIs.google import nlp_ai_cloud
+
+  text_content_uri = &lt;your-text_content_uri&gt;
+  model = 'entity'
+  credentials = &lt;your-credentials.json&gt;
+
+  text_classification = nlp_ai_cloud(text_content_uri, model, credentials)
+  print(&quot;Analyzing Entities in a String&quot;)
+  text_classification.analyze_entities
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../installation/" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 - 2019 <a href="https://alinex.de">Alexander Schilling</a></p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../installation/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
