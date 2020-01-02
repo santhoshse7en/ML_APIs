@@ -22,15 +22,15 @@ Python == 2.7. Python 2.7 support will be removed on January 1, 2020.
 
 #### Windows 
 ```console
-  se7en@bar:~$ pip install virtualenv
-  se7en@bar:~$ virtualenv <your-env>
-  se7en@bar:~$ <your-env>\Scripts\activate
-  (<your-env>)se7en@bar:~$ 
+se7en@bar:~$ pip install virtualenv
+se7en@bar:~$ virtualenv <your-env>
+se7en@bar:~$ <your-env>\Scripts\activate
+(<your-env>)se7en@bar:~$ 
 ```
 
-The easiest way to install the latest stable version of Airflow is with pip:
+The easiest way to install the latest stable version of ML_APIs is with pip:
 ```console
-  (<your-env>)se7en@bar:~$ pip install ML_APIs
+(<your-env>)se7en@bar:~$ pip install ML_APIs
 ```
 ### Example Usage Google Vision A.I. on local media file
 ```python3
