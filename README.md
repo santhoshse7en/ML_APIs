@@ -32,7 +32,7 @@ The easiest way to install the latest stable version of Airflow is with pip:
 ```console
   (<your-env>)se7en@bar:~$ pip install ML_APIs
 ```
-## Example Usage Google Vision A.I. on local media file
+### Example Usage Google Vision A.I. on local media file
 ```python3
   from ML_APIs.google import vision_ai_local
   
