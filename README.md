@@ -1,5 +1,11 @@
+[![PyPI Version](https://img.shields.io/pypi/v/ML_APIs.svg)](https://pypi.org/project/ML_APIs)
+[![Coverage Status](https://coveralls.io/repos/github/santhoshse7en/ML_APIs/badge.svg?branch=master)](https://coveralls.io/github/santhoshse7en/ML_APIs?branch=master)
+[![License](https://img.shields.io/pypi/l/ML_APIs.svg)](https://pypi.python.org/pypi/ML_APIs/)
+[![Documentation Status](https://readthedocs.org/projects/pip/badge/?version=latest&style=flat)](https://santhoshse7en.github.io/ML_APIs/doc)
+
 ### ML_APIs
-A simple python package to get ease use of Google ML APIs
+ML_APIs enables developers to understand the content of an image by encapsulating powerful machine learning models in an easy to use. It quickly classifies images into thousands of categories (e.g., “sailboat”, “lion”, “Eiffel Tower”), detects individual objects and faces within images, and finds and reads printed words contained within images. You can build metadata on your image catalog, moderate offensive content, or enable new marketing scenarios through image sentiment analysis. Analyze images uploaded in the request or integrate with your image storage on Google Cloud Storage.
+
 
 ### Quick Start
 **In order to use this library, you first need to go through the following steps:**
