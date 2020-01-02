@@ -36,4 +36,5 @@ se7en@bar:~$ <your-env>\Scripts\pip.exe install google-cloud-vision
   credentials = <your-credentials.json>
   
   image_classification = vision_ai_local(path, model, credentials)
+  image_classification.logos
 ```
