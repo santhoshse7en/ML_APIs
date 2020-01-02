@@ -28,7 +28,7 @@ se7en@bar:~$ <your-env>\Scripts\activate
 (<your-env>)se7en@bar:~$ 
 ```
 
-The easiest way to install the latest stable version of Airflow is with pip:
+The easiest way to install the latest stable version of ML_APIs is with pip:
 ```console
 (<your-env>)se7en@bar:~$ pip install ML_APIs
 ```
